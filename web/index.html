@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MINVIELLE FRANCOIS YVES</title>
+  <meta name="description" content="A local operations app for work orders, facility bookings, shipments, and compliance reports.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root {
+      --ink: #17252b;
+      --muted: #5b686b;
+      --primary: #244e5f;
+      --secondary: #2f7a73;
+      --accent: #d7a442;
+      --surface: #f7faf9;
+      --line: #dbe5e3;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--surface);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px clamp(18px, 4vw, 56px);
+      color: var(--white);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, .35);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      align-items: end;
+      padding: 96px clamp(18px, 4vw, 56px) 72px;
+      color: var(--white);
+      background:
+        linear-gradient(180deg, rgba(23, 37, 43, .2), rgba(23, 37, 43, .78)),
+        url("featured.png") center / cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 8vw, 86px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 18px 0 28px;
+      color: rgba(255, 255, 255, .86);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #1d2528;
+      font-weight: 800;
+    }
+
+    main {
+      padding: 34px clamp(18px, 4vw, 56px) 56px;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0 0 8px;
+      font-size: clamp(26px, 4vw, 42px);
+      letter-spacing: 0;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .panel h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .panel p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+      align-items: start;
+      margin-top: 28px;
+    }
+
+    .status-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .status-row:last-child {
+      border-bottom: 0;
+    }
+
+    .tag {
+      color: var(--secondary);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    footer {
+      padding: 26px clamp(18px, 4vw, 56px);
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 82vh;
+      }
+
+      .grid,
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="favicon.png" alt="">
+      <span>MINVIELLE FRANCOIS YVES</span>
+    </div>
+    <nav aria-label="Primary">
+      <a href="#workflow">Workflow</a>
+      <a href="#records">Records</a>
+      <a href="mailto:support@minviellefrancoisyves.com">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>MINVIELLE FRANCOIS YVES</h1>
+      <p>Operations-focused Android tools for work orders, facility bookings, shipment logs, and compliance reporting.</p>
+      <a class="button" href="#workflow">Review workflow</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="workflow">
+      <div class="section-title">
+        <h2>Daily operations in one local workspace</h2>
+        <p>Create records, assign owners, set priority, and update status without accounts, cloud sync, or external services.</p>
+      </div>
+      <div class="grid" id="records">
+        <article class="panel">
+          <h3>Work orders</h3>
+          <p>Track maintenance tasks, blockers, owners, and service windows from request through closure.</p>
+        </article>
+        <article class="panel">
+          <h3>Facility booking</h3>
+          <p>Coordinate rooms, setup needs, access timing, and facility handoffs for internal activity.</p>
+        </article>
+        <article class="panel">
+          <h3>Shipment log</h3>
+          <p>Record inbound and outbound movement, route notes, carrier handoffs, and receiving status.</p>
+        </article>
+        <article class="panel">
+          <h3>Compliance reports</h3>
+          <p>Keep audit observations, corrective actions, and reporting follow-up visible in the same workflow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow">
+      <div class="panel">
+        <h2>Built for private operational tracking</h2>
+        <p>The Android app stores records locally on the device. It does not require registration, analytics, location, contacts, advertising identifiers, or network APIs.</p>
+      </div>
+      <div class="panel status-list">
+        <div class="status-row"><span>Queued work</span><span class="tag">Prioritize</span></div>
+        <div class="status-row"><span>Facility activity</span><span class="tag">Schedule</span></div>
+        <div class="status-row"><span>Shipments</span><span class="tag">Log</span></div>
+        <div class="status-row"><span>Compliance items</span><span class="tag">Close</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    MINVIELLE FRANCOIS YVES - support@minviellefrancoisyves.com
+  </footer>
+</body>
+</html>

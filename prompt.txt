@@ -1,0 +1,6 @@
+using $gpc-app-builder  create this app
+app title: MINVIELLE FRANCOIS YVES
+app idea: An operations-focused app offering work orders, facility booking, shipment log, and compliance reporting to streamline daily business tasks.
+company name: MINVIELLE FRANCOIS YVES
+email address: [email to be provided later]
+the two icon and featured graphics contained in docs folder
