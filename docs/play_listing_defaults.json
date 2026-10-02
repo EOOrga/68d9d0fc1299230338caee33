@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.taziggg100.minvielle_ops": {
+      "title": "MINVIELLE FRANCOIS YVES",
+      "short_description": "Track work orders, facility bookings, shipments, and compliance tasks in one...",
+      "full_description": "MINVIELLE FRANCOIS YVES helps business teams keep daily operations moving without account setup or cloud sync. The app combines work orders, room bookings, shipment entries, and compliance reporting into a focused Android workspace.\n\nCreate local records, assign owners, set priorities, and update status as tasks move from queued to closed. The dashboard highlights active work, blocked items, logistics activity, and reporting follow-up so teams can scan the day quickly.\n\nAll records are stored on the device, making the app practical for private operational tracking where simple local control is preferred.",
+      "source_screenshots": [
+        "docs/screens/01_home.png",
+        "docs/screens/02_work.png",
+        "docs/screens/03_detail.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:24:33.316372+00:00"
+    }
+  }
+}
