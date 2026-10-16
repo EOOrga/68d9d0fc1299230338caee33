@@ -295,7 +295,7 @@ class _MinvielleOpsAppState extends State<MinvielleOpsApp> {
 }
 
 ThemeData _buildTheme() {
-  const seed = Color(0xFF2D6A73);
+  const seed = Color(0xFF621FFF);
   final scheme = ColorScheme.fromSeed(
     seedColor: seed,
     brightness: Brightness.light,
@@ -867,7 +867,7 @@ class MoreScreen extends StatelessWidget {
         const SizedBox(height: 8),
         _SettingsTile(
           icon: Icons.storage_rounded,
-          title: 'Local storage only',
+          title: 'MINVIELLE FRANCOIS YVES',
           subtitle: 'Records stay on this Android device and are not synced.',
         ),
         _SettingsTile(
