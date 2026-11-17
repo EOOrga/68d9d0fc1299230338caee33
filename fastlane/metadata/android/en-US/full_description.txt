@@ -1,0 +1,5 @@
+MINVIELLE FRANCOIS YVES helps business teams keep daily operations moving without account setup or cloud sync. The app combines work orders, room bookings, shipment entries, and compliance reporting into a focused Android workspace.
+
+Create local records, assign owners, set priorities, and update status as tasks move from queued to closed. The dashboard highlights active work, blocked items, logistics activity, and reporting follow-up so teams can scan the day quickly.
+
+All records are stored on the device, making the app practical for private operational tracking where simple local control is preferred.

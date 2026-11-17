@@ -1,4 +1,4 @@
-name: minvielle_ops
+name: minvielle_o
 description: "Operations tools for work orders, facility bookings, shipments, and compliance reports."
 publish_to: "none"
 version: 1.0.0+1
@@ -27,6 +27,6 @@ flutter_launcher_icons:
   android: true
   ios: false
   image_path: docs/icon.png
-  adaptive_icon_background: "#F4F7F6"
+  adaptive_icon_background: "#87B800"
   adaptive_icon_foreground: docs/icon.png
   min_sdk_android: 23
